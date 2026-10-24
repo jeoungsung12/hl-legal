@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>해령: 라스트라이트</title>
+<meta name="description" content="꺼져 가는 도시, 마지막 불빛을 지켜라. 동해안 철강 도시의 사흘을 버티는 생존 액션.">
+<meta property="og:title" content="해령: 라스트라이트">
+<meta property="og:description" content="꺼져 가는 도시, 마지막 불빛을 지켜라.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="img/icon.png">
+<style>
+@font-face { font-family: "Title"; src: url("BlackHanSans-Regular.ttf") format("truetype"); font-display: swap; }
+:root { --bg:#0b1015; --ink:#E9EDF0; --sub:#9fb0bd; --ember:#E2792C; --line:#1e2a33; }
+* { box-sizing: border-box; }
+body { margin:0; word-break:keep-all; background:var(--bg); color:var(--ink);
+       font:16px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+.hero { position:relative; min-height:72vh; display:flex; align-items:flex-end;
+        background:linear-gradient(to top, var(--bg) 4%, rgba(11,16,21,.25) 55%, rgba(11,16,21,.55)), url("img/hero.jpg") center/cover; }
+.hero-in { max-width:960px; margin:0 auto; width:100%; padding:0 16px 48px; }
+h1 { font-family:"Title", sans-serif; font-weight:400; font-size:clamp(40px, 8vw, 72px); line-height:1.1; margin:0;
+     color:#FFF8F1; letter-spacing:.06em; text-shadow:0 0 12px rgba(226,121,44,.45), 0 0 32px rgba(226,121,44,.25); }
+.tag { font-size:clamp(17px, 2.4vw, 22px); color:var(--ink); margin:12px 0 0; }
+.soon { display:inline-block; margin-top:20px; padding:8px 16px; border:1px solid var(--ember); color:#FFF8F1; border-radius:4px; font-size:15px; }
+main { max-width:960px; margin:0 auto; padding:32px 16px 72px; }
+h2 { font-family:"Title", sans-serif; font-weight:400; font-size:24px; letter-spacing:.04em; margin:48px 0 12px; color:#FFF8F1; }
+p { margin:0 0 14px; color:var(--ink); }
+.feat { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; margin:16px 0 0; }
+.feat div { border-top:2px solid var(--ember); padding-top:10px; }
+.feat b { display:block; margin-bottom:4px; }
+.feat span { color:var(--sub); font-size:15px; }
+.shots { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-top:16px; }
+.trailer { width:100%; display:block; border-radius:4px; background:#000; margin-top:16px; }
+.shots img { width:100%; display:block; border-radius:4px; }
+footer { border-top:1px solid var(--line); margin-top:56px; padding-top:20px; font-size:14px; color:var(--sub); }
+footer a { color:var(--sub); }
+.en { color:var(--sub); font-size:15px; }
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-in">
+  <h1>해령: 라스트라이트</h1>
+  <p class="tag">꺼져 가는 도시, 마지막 불빛을 지켜라</p>
+  <span class="soon">iOS · Android 출시 준비 중</span>
+</div></header>
+<main>
+  <p>늦가을, 동해안의 철강 도시 해령시. 고로의 불이 꺼지지 않는 이 도시에 정체 모를 감염이 번진다. 제철소 정비공, 고등학생, 오래 이 동네를 지켜 온 주민. 서로 다른 세 사람의 사흘이 하나로 이어진다.</p>
+
+  <div class="feat">
+    <div><b>소리와 빛이 무리를 부른다</b><span>총성 한 번, 깨진 유리 한 장이 거리의 감염자를 깨운다.</span></div>
+    <div><b>몸을 녹이면 들킨다</b><span>불가에서 몸을 녹인 사람은 멀리서도 들킨다. 따뜻함과 안전 사이에서 고른다.</span></div>
+    <div><b>손에 잡히는 싸움</b><span>3인칭 숄더로 움직이고 정조준은 1인칭. 이어 치기, 처형, 붙잡혔을 때의 탈출.</span></div>
+    <div><b>혼자서, 또는 셋이서</b><span>네 장의 솔로 이야기와 여러 엔딩. 최대 3명이 함께 시작하는 협동.</span></div>
+  </div>
+
+  <h2>트레일러</h2>
+  <video class="trailer" src="trailer.mp4" poster="img/poster.jpg" controls playsinline preload="none"></video>
+  <p class="en">연출 영상입니다. 실제 게임 화면과 다를 수 있습니다.</p>
+
+  <h2>스크린샷</h2>
+  <div class="shots">
+    <img src="img/s01.jpg" alt="게임 화면 1" loading="lazy">
+    <img src="img/s02.jpg" alt="게임 화면 2" loading="lazy">
+    <img src="img/s03.jpg" alt="게임 화면 3" loading="lazy">
+    <img src="img/s04.jpg" alt="게임 화면 4" loading="lazy">
+  </div>
+
+  <h2>Haeryeong: Last Light</h2>
+  <p class="en">Late autumn in Haeryeong, a steel city on the east coast where the blast furnace never goes out. Then an unknown infection spreads. Sound and light draw the infected, and warming up gives you away. Alone or with two friends, keep the last light burning. Coming soon to iOS and Android.</p>
+
+  <footer>
+    © 2026 정성윤 · 문의 <a href="mailto:onsaemigol@gmail.com">onsaemigol@gmail.com</a><br>
+    <a href="../privacy/">개인정보처리방침</a> · <a href="../terms/">이용약관</a> · <a href="../delete/">계정 삭제 안내</a> · <a href="../">Legal</a>
+  </footer>
+</main>
+</body>
+</html>
